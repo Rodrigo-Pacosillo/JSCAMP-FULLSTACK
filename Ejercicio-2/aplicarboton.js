@@ -8,3 +8,9 @@ articulo.addEventListener("click",function(event){
     }
 })
 console.log("algo")
+
+
+
+const articulos = document.querySelectorAll(".job-listing-card")
+const padre_option = document.querySelectorAll(".search-filters")
+const Un_Select= document.querySelectorAll("#filter-technology")
