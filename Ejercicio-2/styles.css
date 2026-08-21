@@ -433,10 +433,6 @@ article {
       display: none;
     }
 
-    small {
-      font-size: .875rem;
-      opacity: .75;
-    }
 
     p {
       margin-top: 0.5rem
@@ -491,8 +487,4 @@ article {
 }
 
 
-/*mis weas*/
-.ocultar{
-  color: red;
-}
 

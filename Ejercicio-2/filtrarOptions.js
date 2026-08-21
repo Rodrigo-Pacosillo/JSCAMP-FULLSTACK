@@ -12,7 +12,7 @@ filtro.addEventListener("change",function(event){
     array_jobs.forEach(element => {
         const dataAtributo = element.dataset.modalidad
         const condicion = valorOption === "" || valorOption === dataAtributo
-        element.classList.toggle("ocultar",!condicion)
+        element.classList.toggle("is-hidden",!condicion)
        
     });
 
