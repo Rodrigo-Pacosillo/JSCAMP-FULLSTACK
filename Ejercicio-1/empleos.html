@@ -2,44 +2,43 @@
 <html lang="es">
 
 <head>
-  <title>DevJobs - Empleos</title>
+  <title>DevJobs - Resultados de Búsqueda</title>
   <meta charset="UTF-8" />
   <meta name="description" content="Listado con empleos y filtros para encontrar el trabajo de tus sueños.">
 
   <link rel="stylesheet" href="./styles.css" />
 
-  <script type="module" src="./main.js"></script>
+  <link rel="stylesheet" href="assets/styles/stylesGlobales.css" />
+  <link rel="stylesheet" href="assets/styles/empleos.css">
 </head>
 
 <body>
   <header>
-    <h1>
+    <a href="#top">
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <polyline points="16 18 22 12 16 6"></polyline>
         <polyline points="8 6 2 12 8 18"></polyline>
       </svg>
       DevJobs
-    </h1>
+    </a>
 
     <nav>
-      <!-- <a href="">
-        Inicio
-      </a> -->
-      <a href="">Empleos</a>
+      <ul>
+        <li><a href="">Buscar</a></li>
+        <li><a href="empleos.html">Empleos</a></li>
+        <li><a href="">Empresas</a></li>
+        <li><a href="">Salarios</a></li>
+      </ul>
     </nav>
 
     <div>
-      <devjobs-avatar service="google" username="google.com" size="32">
-      </devjobs-avatar>
-
-      <devjobs-avatar service="google" username="netflix.com" size="32">
-      </devjobs-avatar>
-
-      <devjobs-avatar service="google" username="vercel.com" size="32">
-      </devjobs-avatar>
+      <a href="">Subir CV</a>
+      <a href=""> <svg></svg> </a>
     </div>
   </header>
+
+    
 
   <main>
     <section class="jobs-search">
@@ -98,7 +97,6 @@
         </div>
       </form>
 
-      <span id="filter-selected-value"></span>
     </section>
 
     <section>
@@ -156,31 +154,27 @@
          
       </div>
 
-      <nav class="pagination">
+      
+          
+      <ul>
+        <li><nav class="pagination">
         <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M15 6l-6 6l6 6" />
-          </svg></a>
-          <!--
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      -->
-        <a class="is-active" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          </svg></a></li>
+        <li><a class="is-active" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M9 6l6 6l-6 6" />
-          </svg></a>
+          </svg></a></li>
+      </ul> 
       </nav>
     </section>
   </main>
